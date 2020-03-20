@@ -625,14 +625,15 @@
         </div>
       </div>
     </section>
-    <section class="reservation">
+
+    <section class="reservation" data-aos="slide-up">
       <div class="makereservation">
         <div class="title">
-          <span class="outer_title">Services</span>
-          <h2 class="outer_title">Catering Services</h2>
+          <span class="outer_title">Book a table</span>
+          <h2 class="outer_title">Make reservation</h2>
         </div>
         <form action="#">
-          <div class="name-email">
+          <div class="input-group">
             <div class="form-group">
               <label for="#">Name</label>
               <input type="text" class="form-control" placeholder="Your Name" />
@@ -640,13 +641,13 @@
             <div class="form-group">
               <label for="#">Email</label>
               <input
-                type="email"
+                type="text"
                 class="form-control"
                 placeholder="Your Email"
               />
             </div>
           </div>
-          <div class="phone-date">
+          <div class="input-group">
             <div class="form-group">
               <label for="phone">Phone</label>
               <input
@@ -660,29 +661,178 @@
             </div>
             <div class="form-group">
               <label for="start">Date</label>
-              <input type="date" id="start" name="trip-start" />
+              <input
+                type="text"
+                id="start"
+                name="trip-start"
+                placeholder="Date"
+              />
             </div>
           </div>
-          <div class="time-person">
-            <div class="form-group">
-              <label for="appt">Time</label>
-              <input type="time" id="appt" name="appt" required />
-            </div>
-            <div class="form-group">
-              <label for="person">Person</label>
-              <select name="person" id="person">
-                <option>1 Person</option>
-                <option>2 Person</option>
-                <option>3 Person</option>
-                <option>4+ Person</option>
-              </select>
-            </div>
+
+          <div class="input-group">
+            <input
+              type="submit"
+              value="Make a reservation"
+              class="input-button"
+            />
           </div>
         </form>
       </div>
-      <div id="map" style="height: 300px; width: 400px;"></div>
+      <div id="map" style="height: 400px; width: 600px;"></div>
     </section>
-    <section></section>
+    <section class="team">
+      <div class="title">
+        <span class="outer_title">Chef</span>
+        <h2 class="outer_title">Our Master Chef</h2>
+      </div>
+      <div class="chef-cards">
+        <div class="chef-card">
+          <div
+            class="card-img"
+            style="background-image: url(assets/img/chef-4.jpg);"
+          ></div>
+          <div class="card-desc">
+            <div class="desc-title">
+              <div class="desc-main"><h3>John Smooth</h3></div>
+              <div class="desc-main-position">
+                <span>Restaurant Owner</span>
+              </div>
+            </div>
+            <div class="desc-about">
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia.
+              </p>
+            </div>
+          </div>
+          <div class="card-social">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="chef-card">
+          <div
+            class="card-img"
+            style="background-image: url(assets/img/chef-3.jpg);"
+          ></div>
+          <div class="card-desc">
+            <div class="desc-title">
+              <div class="desc-main"><h3>Kharl Branyt</h3></div>
+              <div class="desc-main-position">
+                <span>Head Chef</span>
+              </div>
+            </div>
+            <div class="desc-about">
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia.
+              </p>
+            </div>
+          </div>
+          <div class="card-social">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="chef-card">
+          <div
+            class="card-img"
+            style="background-image: url(assets/img/chef-2.jpg);"
+          ></div>
+          <div class="card-desc">
+            <div class="desc-title">
+              <div class="desc-main"><h3>Rebeca Welson</h3></div>
+              <div class="desc-main-position">
+                <span>Chef</span>
+              </div>
+            </div>
+            <div class="desc-about">
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia.
+              </p>
+            </div>
+          </div>
+          <div class="card-social">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="chef-card">
+          <div
+            class="card-img"
+            style="background-image: url(assets/img/chef-1.jpg);"
+          ></div>
+          <div class="card-desc">
+            <div class="desc-title">
+              <div class="desc-main"><h3>Luke Simon</h3></div>
+              <div class="desc-main-position">
+                <span>Chef</span>
+              </div>
+            </div>
+            <div class="desc-about">
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia.
+              </p>
+            </div>
+          </div>
+          <div class="card-social">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/video.popup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"></script>
@@ -691,7 +841,8 @@
     <script>
       AOS.init({
         delay: 600,
-        duration: 1200
+        duration: 1200,
+        once: true
       });
     </script>
     <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>

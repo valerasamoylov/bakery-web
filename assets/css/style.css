@@ -345,5 +345,110 @@ section.menu {
   justify-content: space-around;
 }
 
-.reservation .makereservation .title .outer_title {
+.reservation .makereservation .title,
+.team .title {
+  position: relative;
+}
+
+.reservation .makereservation .title .outer_title,
+.team .title .outer_title {
+  font-weight: 600;
+  color: #333;
+  font-size: 3.125rem;
+}
+
+.reservation .makereservation .title span.outer_title,
+.team .title span.outer_title {
+  font-family: "Miss Fajardose", cursive;
+  color: #ffa500;
+  position: absolute;
+  bottom: 25%;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-weight: 800;
+}
+
+.reservation form .input-group {
+  display: inherit;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.reservation form .input-group .form-group {
+  display: inherit;
+  flex-direction: column;
+}
+
+.reservation form .input-group .form-group input,
+.reservation form .input-group:nth-child(3) input {
+  height: 3.25rem;
+  background: #fff;
+  font-size: 1rem;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  overflow: visible;
+  font-family: inherit;
+  display: block;
+}
+.reservation form .input-group:nth-child(3) {
+  align-self: flex-start;
+}
+
+.reservation form .input-group:nth-child(3) input {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.reservation form .input-group:nth-child(3) input:hover {
+  color: #ffa500;
+  background-color: #fff;
+  outline: #ffa500;
+  border: 1px solid #ffa500;
+  cursor: pointer;
+}
+
+.team {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.team .chef-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.team .chef-card {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.team .chef-cards .chef-card .card-img {
+  height: 320px;
+  background-position: top center;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chef-card .card-desc {
+  text-align: left;
+}
+.team .chef-cards .chef-card .card-desc .dest-title .desc-main {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
