@@ -38,7 +38,6 @@ $(window).scroll(function() {
           },
           complete: function() {
             $this.text(this.countNum);
-            //alert('finished');
           }
         }
       );
@@ -83,5 +82,22 @@ $(window).scroll(function() {
     $("header").addClass("sticky");
   } else {
     $("header").removeClass("sticky");
+  }
+});
+
+$(".owl-feedback").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 3
+    }
   }
 });

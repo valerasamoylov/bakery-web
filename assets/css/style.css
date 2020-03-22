@@ -447,8 +447,59 @@ section.menu {
 
 .chef-card .card-desc {
   text-align: left;
+  padding: 1rem 0;
 }
-.team .chef-cards .chef-card .card-desc .dest-title .desc-main {
-  color: rgb(0, 0, 0);
+.team .chef-cards .chef-card .card-desc .desc-title .desc-main {
+  color: #333;
   font-weight: 600;
+  font-size: 0.9rem;
+}
+.desc-main-position {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 0.8rem;
+}
+
+.desc-about {
+  font-size: 1rem;
+}
+
+.team .card-social .social-list {
+  display: flex;
+  flex-direction: row;
+}
+.team .card-social .social-list li {
+  list-style-type: none;
+  padding: 0.4rem;
+}
+
+.team .card-social .social-list li a {
+  color: #ffa500;
+}
+
+.testimonial {
+  padding: 2rem;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.testimonial .title {
+  position: relative;
+}
+.testimonial .title span.outer_title {
+  font-weight: 500;
+  font-size: 6rem;
+}
+
+.testimonial span.outer_title {
+  font-family: "Miss Fajardose", cursive;
+  color: #ffa500;
+}
+
+.testimonial h2.outer_title {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 900;
+  position: absolute;
+  left: 36%;
+  bottom: 8%;
 }
