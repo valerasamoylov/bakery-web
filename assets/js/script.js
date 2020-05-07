@@ -5,40 +5,40 @@ $(".owl-carousel").owlCarousel({
   autoHeight: true,
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     600: {
-      items: 1
+      items: 1,
     },
     1000: {
-      items: 1
-    }
-  }
+      items: 1,
+    },
+  },
 });
 
 var a = 0;
-$(window).scroll(function() {
+$(window).scroll(function () {
   var oTop = $(".section-counter").offset().top - window.innerHeight;
   if (a == 0 && $(window).scrollTop() > oTop) {
-    $(".number").each(function() {
+    $(".number").each(function () {
       var $this = $(this),
         countTo = $this.attr("data-count");
       $({
-        countNum: $this.text()
+        countNum: $this.text(),
       }).animate(
         {
-          countNum: countTo
+          countNum: countTo,
         },
 
         {
           duration: 2000,
           easing: "swing",
-          step: function() {
+          step: function () {
             $this.text(Math.floor(this.countNum));
           },
-          complete: function() {
+          complete: function () {
             $this.text(this.countNum);
-          }
+          },
         }
       );
     });
@@ -55,10 +55,10 @@ mapboxClient.geocoding
   .forwardGeocode({
     query: "Lviv, Ukraine",
     autocomplete: false,
-    limit: 1
+    limit: 1,
   })
   .send()
-  .then(function(response) {
+  .then(function (response) {
     if (
       response &&
       response.body &&
@@ -71,13 +71,13 @@ mapboxClient.geocoding
         container: "map",
         style: "mapbox://styles/mapbox/streets-v11",
         center: feature.center,
-        zoom: 10
+        zoom: 10,
       });
       new mapboxgl.Marker().setLngLat(feature.center).addTo(map);
     }
   });
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(this).scrollTop() > 1) {
     $("header").addClass("sticky");
   } else {
@@ -91,13 +91,13 @@ $(".owl-feedback").owlCarousel({
   nav: true,
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     600: {
-      items: 3
+      items: 3,
     },
     1000: {
-      items: 3
-    }
-  }
+      items: 3,
+    },
+  },
 });
